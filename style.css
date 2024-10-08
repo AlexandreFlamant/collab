@@ -37,6 +37,7 @@ h1 {
 /* Styles for the List Container */
 .list-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
 }
@@ -47,6 +48,7 @@ h1 {
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
 }
 
 .list h2 {
@@ -67,6 +69,11 @@ h1 {
 
 .list ul li:hover {
   background-color: #f9f9f9;
+}
+
+.item-text {
+  display: inline-block;
+  word-break: break-word;
 }
 
 /* Styles for the Delete Button */
