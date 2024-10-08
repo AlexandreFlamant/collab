@@ -1,2 +1,2 @@
 # collab
-A simple collaborative list UI for VCs
+A simple collaborative list UI
