@@ -55,47 +55,33 @@ h1 {
 }
 
 .list ul {
-  list-style-type: disc;
-  padding-left: 20px;
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 0;
 }
 
 .list ul li {
-  margin-bottom: 10px;
+  position: relative;
+  padding: 10px 40px 10px 10px; /* Space for the delete button */
+  border-bottom: 1px solid #eee;
 }
 
-/* Styles for the Input Bar */
-.input-bar {
-  display: flex;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.list ul li:hover {
   background-color: #f9f9f9;
-  padding: 10px;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
 }
 
-.input-bar input[type="text"] {
-  flex: 1;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-right: 10px;
-  box-sizing: border-box;
-}
-
-.input-bar button {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
+/* Styles for the Delete Button */
+.delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
   border: none;
-  border-radius: 5px;
+  color: #888;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.input-bar button:hover {
-  background-color: #0056b3;
+.delete-btn:hover {
+  color: #e74c3c;
 }

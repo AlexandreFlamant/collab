@@ -45,7 +45,7 @@ document.getElementById('user-form').addEventListener('submit', function(event) 
     }
   });
   
-  // Function to add a message to the list
+  // Function to add a message to the list with a delete button
   function addMessageToList(message, sender) {
     let list;
     if (sender === 'user') {
@@ -59,6 +59,21 @@ document.getElementById('user-form').addEventListener('submit', function(event) 
     if (list) {
       const listItem = document.createElement('li');
       listItem.textContent = message;
+  
+      // Create the delete button
+      const deleteBtn = document.createElement('button');
+      deleteBtn.textContent = '×';
+      deleteBtn.className = 'delete-btn';
+  
+      // Add event listener to the delete button
+      deleteBtn.addEventListener('click', function() {
+        list.removeChild(listItem);
+      });
+  
+      // Append the delete button to the list item
+      listItem.appendChild(deleteBtn);
+  
+      // Append the list item to the list
       list.appendChild(listItem);
     }
   }
