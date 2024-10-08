@@ -6,20 +6,19 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script src="script.js"></script>
   <div id="app">
     <h1>List Collab</h1>
-<form id="user-form">
-  <label for="vc-name">Your Name:</label>
-  <input type="text" id="vc-name" name="vc-name" placeholder="Enter your name">
 
-  <label for="fund-name">Your Organisation</label>
-  <input type="text" id="fund-name" name="fund-name" placeholder="Enter your fund name">
+    <form id="user-form">
+      <label for="vc-name">Your Name:</label>
+      <input type="text" id="vc-name" name="vc-name" placeholder="Enter your name">
 
-  <button type="submit">Start</button>
-</form>
+      <label for="fund-name">Your Organisation</label>
+      <input type="text" id="fund-name" name="fund-name" placeholder="Enter your organisation name">
 
-    <h1>List Collab</h1>
+      <button type="submit">Start</button>
+    </form>
+
     <div class="list-container">
       <div class="list">
         <h2>User_1 @ User_1_Organisation</h2>
@@ -39,5 +38,14 @@
       </div>
     </div>
   </div>
+
+  <!-- Input Bar -->
+  <div class="input-bar">
+    <input type="text" id="chat-input" placeholder="Type your message here..." />
+    <button id="send-button">Submit</button>
+  </div>
+
+  <!-- Include script.js -->
+  <script src="script.js"></script>
 </body>
 </html>

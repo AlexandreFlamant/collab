@@ -1,59 +1,101 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #f7f7f7;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .list-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-  
-  .list {
-    width: 45%;
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  }
-  
-  .list h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .list ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .list ul li {
-    margin-bottom: 10px;
-  }
-  
-  #user-form {
-    max-width: 400px;
-    margin: 0 auto;
-    margin-bottom: 40px;
-  }
-  
-  #user-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  #user-form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-  }
-  
-  #user-form button {
-    width: 100%;
-    padding: 10px;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f7f7f7;
+  margin-bottom: 70px; /* Height of the input bar plus padding */
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Styles for the User Form */
+#user-form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+#user-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#user-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+#user-form button {
+  width: 100%;
+  padding: 10px;
+}
+
+/* Styles for the List Container */
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.list {
+  width: 45%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.list ul li {
+  margin-bottom: 10px;
+}
+
+/* Styles for the Input Bar */
+.input-bar {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.input-bar input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.input-bar button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-bar button:hover {
+  background-color: #0056b3;
+}
