@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .list-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .list {
+    width: 45%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .list ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .list ul li {
+    margin-bottom: 10px;
+  }
+  
