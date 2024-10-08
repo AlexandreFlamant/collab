@@ -78,6 +78,22 @@ document.getElementById('user-form').addEventListener('submit', function(event) 
     }
   }
   
+  // Function to add delete functionality to existing list items
+  function addDeleteFunctionalityToExistingItems() {
+    const deleteButtons = document.querySelectorAll('.delete-btn');
+    deleteButtons.forEach(function(button) {
+      button.addEventListener('click', function() {
+        const listItem = button.parentElement;
+        listItem.parentElement.removeChild(listItem);
+      });
+    });
+  }
+  
+  // Call the function after the DOM content is loaded
+  document.addEventListener('DOMContentLoaded', function() {
+    addDeleteFunctionalityToExistingItems();
+  });
+  
   // For demonstration purposes, simulate the other user adding messages
   // In a real application, this would be handled via a backend and real-time updates
   setTimeout(function() {
