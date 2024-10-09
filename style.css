@@ -1,11 +1,66 @@
-/* Custom Styles (Optional) */
+/* Custom Styles */
 
 /* Center the form on the page */
 #user-form {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
-/* Adjust modal width */
-#add-item-modal {
-  max-width: 500px;
+/* Reduce the height of the h1 title */
+header h1 {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+/* Styles for the Input Bar */
+.input-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; /* Set a fixed height */
+  background-color: #f5f5f5; /* Light grey background */
+  border-top: 1px solid #e0e0e0; /* Light grey border */
+  z-index: 999;
+}
+
+.input-bar .container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.input-bar-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-bar-row .input-field {
+  flex: 1;
+  margin: 0;
+}
+
+.input-bar-row .input-field input {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.input-bar-row .input-field input:focus + label,
+.input-bar-row .input-field input:valid + label {
+  transform: translateY(-14px) scale(0.8);
+}
+
+.input-bar-row button {
+  height: 100%;
+  margin: 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  margin-bottom: 60px; /* Adjust based on input bar height */
 }

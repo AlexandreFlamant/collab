@@ -1,8 +1,8 @@
 // Initialize Materialize components
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize Modal
-  var modals = document.querySelectorAll('.modal');
-  M.Modal.init(modals);
+  // Initialize Sidenav (if using)
+  var sidenavs = document.querySelectorAll('.sidenav');
+  M.Sidenav.init(sidenavs);
 
   // Handle the submit event for the user form
   document.getElementById('user-form').addEventListener('submit', function(event) {
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('user-form').style.display = 'none';
   });
 
-  // Handle the submit button click in the modal
+  // Handle the submit button click in the input bar
   const chatInput = document.getElementById('chat-input');
   const sendButton = document.getElementById('send-button');
 
@@ -37,8 +37,18 @@ document.addEventListener('DOMContentLoaded', function() {
       addMessageToList(message, 'user');
       // Clear the input field
       chatInput.value = '';
+      // Re-focus on the input field
+      chatInput.focus();
     } else {
       M.toast({html: 'Please enter a message.'});
+    }
+  });
+
+  // Allow pressing "Enter" to submit the message
+  chatInput.addEventListener('keypress', function (event) {
+    if (event.key === 'Enter') {
+      event.preventDefault(); // Prevent form submission if inside a form
+      sendButton.click();
     }
   });
 

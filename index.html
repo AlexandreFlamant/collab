@@ -63,15 +63,7 @@
           <li class="collection-header">
             <h5 id="user-list-title">User_1 @ User_1_Organisation</h5>
           </li>
-          <li class="collection-item">
-            <div>Company A<a href="#!" class="secondary-content delete-btn"><i class="material-icons">close</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Company B<a href="#!" class="secondary-content delete-btn"><i class="material-icons">close</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Company C<a href="#!" class="secondary-content delete-btn"><i class="material-icons">close</i></a></div>
-          </li>
+          <!-- User's list items will appear here -->
         </ul>
       </div>
       <!-- Other User's List -->
@@ -80,39 +72,25 @@
           <li class="collection-header">
             <h5 id="other-list-title">User_2 @ User_2_Organisation</h5>
           </li>
-          <li class="collection-item">
-            <div>Company X<a href="#!" class="secondary-content delete-btn"><i class="material-icons">close</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Company Y<a href="#!" class="secondary-content delete-btn"><i class="material-icons">close</i></a></div>
-          </li>
-          <li class="collection-item">
-            <div>Company Z<a href="#!" class="secondary-content delete-btn"><i class="material-icons">close</i></a></div>
-          </li>
+          <!-- Other user's list items will appear here -->
         </ul>
       </div>
     </div>
   </div>
 
-  <!-- Floating Action Button to Add Items -->
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large teal modal-trigger" href="#add-item-modal">
-      <i class="large material-icons">add</i>
-    </a>
-  </div>
-
-  <!-- Modal Structure -->
-  <div id="add-item-modal" class="modal">
-    <div class="modal-content">
-      <h4>Add Item</h4>
-      <div class="input-field">
-        <input id="chat-input" type="text">
-        <label for="chat-input">Type your message here...</label>
+  <!-- Input Bar at the Bottom -->
+  <div class="input-bar">
+    <div class="container">
+      <div class="input-bar-row">
+        <div class="input-field" style="margin: 0; flex: 1;">
+          <input id="chat-input" type="text" style="margin: 0; height: 100%;">
+          <label for="chat-input">Type your message here...</label>
+        </div>
+        <button id="send-button" class="btn waves-effect waves-light" style="height: 100%; margin: 0;">
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
       </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancel</a>
-      <a href="#!" id="send-button" class="modal-close waves-effect waves-green btn">Submit</a>
     </div>
   </div>
 
