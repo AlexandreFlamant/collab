@@ -1,16 +1,8 @@
 /* Custom Styles */
 
-/* Center the form on the page */
-#user-form {
+/* Remove top margin since navbar replaces the header */
+#app {
   margin-top: 20px;
-}
-
-/* Reduce the height of the h1 title */
-header h1 {
-  font-size: 2rem;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  line-height: 1.2;
 }
 
 /* Styles for the Input Bar */
